@@ -80,7 +80,7 @@ Saída esperada: `{"error":"Authorization header obrigatório"}`
 ```bash
 curl -X POST http://localhost:8002/flags \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer SUA_CHAVE_API" \
+-H "Authorization: Bearer tm_key_8fd3a6cb05d624c5d57b51638c0f9cc76daae9917f501717e73a6a1cc1fa0756" \
 -d '{
     "name": "enable-new-dashboard",
     "description": "Ativa o novo dashboard para usuários",
@@ -92,7 +92,7 @@ Saída esperada: (Um JSON com os dados da flag criada).
 **4. Liste todas as Flags:**
 ```bash
 curl http://localhost:8002/flags \
--H "Authorization: Bearer SUA_CHAVE_API"
+-H "Authorization: Bearer tm_key_8fd3a6cb05d624c5d57b51638c0f9cc76daae9917f501717e73a6a1cc1fa0756"
 ```
 Saída esperada: (Uma lista `[]` contendo a flag que você criou).
 
